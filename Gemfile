@@ -15,6 +15,10 @@ gem 'stimulus-rails'
 gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[windows jruby]
 
+group :production do
+  gem 'pg'
+end
+
 group :development, :test do
   gem 'debug', platforms: %i[mri windows]
   gem 'sqlite3', '~> 1.4'
